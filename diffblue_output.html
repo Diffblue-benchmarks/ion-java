@@ -1,0 +1,1054 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Results</title>
+  <style>
+    /* Standard styles */
+
+    body {
+      font-family: "Aial", sans-serif;
+      background-color: #EAF4F9;
+      color: black;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: bold;
+    }
+
+    p,
+    a,
+    table,
+    ul {
+      font-size: 12pt;
+    }
+
+    h4 {
+      font-size: 12pt;
+    }
+
+    h3 {
+      font-size: 14pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    tt {
+      font-family: "Liberation Mono", monospace;
+    }
+
+    tt {
+      font-size: 10pt;
+    }
+
+    main {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    /* Table styling */
+
+    table {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+
+    th {
+      background: #B5DEF2;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    td:first-child,
+    th:first-child {
+      border-right: 1px solid #36A9E0;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-left: 1px solid #36A9E0;
+    }
+
+    td {
+      background: white;
+      padding: 8px 10px;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #36A9E0;
+    }
+    /* Title wrapper */
+
+    .title-wrapper {
+      background: white;
+      padding: 5px 0;
+    }
+
+    .title-wrapper h1 {
+      max-width: 620px;
+      margin: 0 auto;
+      color: #0577BD;
+    }
+
+    .title-wrapper h1>span {
+      color: #0D3C62;
+    }
+    /* Status wrapper */
+
+    .status-wrapper {
+      margin-top: 10px;
+    }
+
+    .status-wrapper td {
+      background: none;
+    }
+
+    .status-wrapper a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    /* Status styles */
+
+    .failed {
+      background: #F1596B;
+      color: white;
+      font-weight: bold;
+    }
+    /* Traffic Lights */
+
+    [class^='circle'] {
+      width: 66px;
+      height: 66px;
+      border: 2px solid white;
+      border-radius: 100%;
+      color: white;
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 66px;
+    }
+
+    .circle__failed {
+      background: #F1596B;
+    }
+
+    .circle__failed:before {
+      content: '\002715'
+    }
+
+    .circle__warning {
+      background: #F6A623;
+    }
+
+    .circle__warning:before {
+      content: '\0021'
+    }
+
+    .circle__success {
+      background: #7ED321;
+    }
+
+    .circle__success:before {
+      content: '\002713'
+    }
+  </style>
+</head>
+<body>
+  <div class="title-wrapper">
+    <h1>Results from the script <span>'diffblue_check.py'</span></h1>
+  </div>
+  <main>
+    <table style="border:hidden" class="status-wrapper">
+      <tr style="border:hidden">
+        <td style="border:hidden" width="66px">
+           <div class="circle__warning"></div>
+        </td>
+        <td style="border:hidden">The automated generation of unit tests can be used for your Java application. However, due to some calls to unsupported library functions (13.4%) the coverage might not be as high as it usually is. See the section <a href="#java_app_statistics">Java Project Statistics</a> bellow.</td>
+      </tr>
+    </table>
+    <h2 id="system_requirements">Checking system requirements</h2>
+    <h2 id="java_app_statistics">Java Project Statistics</h2>
+    <table>
+      <col width="340">
+      <col width="280">
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Path to the checked Java application</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>Uses Maven build system?</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>Number of Java classes</td>
+        <td>519</td>
+      </tr>
+      <tr>
+        <td>Number of methods in all classes</td>
+        <td>7638</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized methods in all classes</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Number of volatile elements in all classes</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Number of bytecodes in all methods</td>
+        <td>131270</td>
+      </tr>
+      <tr>
+        <td>Number of loops in all methods</td>
+        <td>598</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized blocks in all methods</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Number of calls to java.util.concurrent classes (atomic / locks / thread / remaining)</td>
+        <td>0 / 0 / 0 / 5</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread pool constructors (fixed / scheduled / fork_join)</td>
+        <td>0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to object synchronizers (wait / timed wait / notify / notifyAll)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread elements (start / sleep / interrupt / join)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of method calls within the Java application</td>
+        <td>3581</td>
+      </tr>
+      <tr>
+        <td>Number of calls to the Java standard library</td>
+        <td>6041</td>
+      </tr>
+      <tr>
+        <td>Number of calls to other Java libraries</td>
+        <td>12040</td>
+      </tr>
+      <tr>
+        <td>Total number of calls in the Java application</td>
+        <td>21662</td>
+      </tr>
+      <tr>
+        <td>Number of calls to supported Java Standard Library functions</td>
+        <td>5229</td>
+      </tr>
+      <tr>
+        <td>Number of calls to unsupported Java Standard Library functions</td>
+        <td>812</td>
+      </tr>
+    </table>
+    <h2 id="non_modelled_library_calls">Calls to unsupported library functions</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Method name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(Ljava/lang/String;)V</td>
+        <td align="right">60</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;</td>
+        <td align="right">58</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;</td>
+        <td align="right">30</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>java/math/BigDecimal.scale:()I</td>
+        <td align="right">27</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>java/util/HashSet."&lt;init&gt;":()V</td>
+        <td align="right">22</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>java/io/FileInputStream.close:()V</td>
+        <td align="right">19</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>java/math/BigDecimal.unscaledValue:()Ljava/math/BigInteger;</td>
+        <td align="right">18</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>java/math/BigDecimal.valueOf:(J)Ljava/math/BigDecimal;</td>
+        <td align="right">17</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>java/util/Calendar.isSet:(I)Z</td>
+        <td align="right">17</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>java/math/BigInteger.compareTo:(Ljava/math/BigInteger;)I</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>java/io/FileInputStream."&lt;init&gt;":(Ljava/io/File;)V</td>
+        <td align="right">14</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>java/util/HashMap."&lt;init&gt;":()V</td>
+        <td align="right">13</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>java/math/BigInteger.longValue:()J</td>
+        <td align="right">11</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>java/util/Calendar.get:(I)I</td>
+        <td align="right">11</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>java/lang/Class.cast:(Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>java/util/Calendar.clear:()V</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>java/util/Calendar.set:(II)V</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>java/math/BigInteger."&lt;init&gt;":(Ljava/lang/String;)V</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>java/util/Calendar.add:(II)V</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>java/math/BigDecimal.compareTo:(Ljava/math/BigDecimal;)I</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>java/math/BigDecimal.intValue:()I</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>java/math/BigInteger.toString:()Ljava/lang/String;</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>java/util/Random.nextInt:(I)I</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(D)V</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>java/math/BigDecimal.doubleValue:()D</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>java/math/BigDecimal.hashCode:()I</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>java/math/BigDecimal.signum:()I</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(Ljava/math/BigInteger;I)V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>java/math/BigInteger.add:(Ljava/math/BigInteger;)Ljava/math/BigInteger;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>java/util/Arrays.equals:([B[B)Z</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>java/util/Calendar.clear:(I)V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>java/util/Calendar.set:(IIIIII)V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>java/util/Collections.emptyList:()Ljava/util/List;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>java/util/Collections.unmodifiableList:(Ljava/util/List;)Ljava/util/List;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">35</td>
+        <td>java/math/BigDecimal.add:(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">36</td>
+        <td>java/math/BigDecimal.equals:(Ljava/lang/Object;)Z</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">37</td>
+        <td>java/math/BigDecimal.floatValue:()F</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">38</td>
+        <td>java/math/BigDecimal.movePointLeft:(I)Ljava/math/BigDecimal;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">39</td>
+        <td>java/math/BigDecimal.subtract:(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">40</td>
+        <td>java/math/BigDecimal.valueOf:(D)Ljava/math/BigDecimal;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">41</td>
+        <td>java/math/BigInteger.intValue:()I</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">42</td>
+        <td>java/math/BigInteger.negate:()Ljava/math/BigInteger;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">43</td>
+        <td>java/math/BigInteger.signum:()I</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">44</td>
+        <td>java/math/BigInteger.toByteArray:()[B</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">45</td>
+        <td>java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">46</td>
+        <td>java/util/TimeZone.getTimeZone:(Ljava/lang/String;)Ljava/util/TimeZone;</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">47</td>
+        <td>java/io/FileOutputStream.close:()V</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">48</td>
+        <td>java/math/BigDecimal.movePointRight:(I)Ljava/math/BigDecimal;</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">49</td>
+        <td>java/math/BigInteger."&lt;init&gt;":(I[B)V</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">50</td>
+        <td>java/math/BigInteger.subtract:(Ljava/math/BigInteger;)Ljava/math/BigInteger;</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">51</td>
+        <td>java/math/BigInteger.toString:(I)Ljava/lang/String;</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">52</td>
+        <td>java/util/Arrays.fill:([BB)V</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">53</td>
+        <td>java/util/EnumSet.contains:(Ljava/lang/Object;)Z</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">54</td>
+        <td>java/util/LinkedList.isEmpty:()Z</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">55</td>
+        <td>java/io/PrintWriter.print:(Ljava/lang/String;)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">56</td>
+        <td>java/lang/reflect/Array.newInstance:(Ljava/lang/Class;I)Ljava/lang/Object;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">57</td>
+        <td>java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">58</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(I)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">59</td>
+        <td>java/math/BigDecimal.setScale:(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">60</td>
+        <td>java/math/BigDecimal.toBigInteger:()Ljava/math/BigInteger;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">61</td>
+        <td>java/math/BigInteger."&lt;init&gt;":(Ljava/lang/String;I)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">62</td>
+        <td>java/math/BigInteger.hashCode:()I</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">63</td>
+        <td>java/sql/Timestamp.getNanos:()I</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">64</td>
+        <td>java/util/Calendar.setTimeInMillis:(J)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">65</td>
+        <td>java/util/Calendar.setTimeZone:(Ljava/util/TimeZone;)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">66</td>
+        <td>java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">67</td>
+        <td>java/util/IdentityHashMap."&lt;init&gt;":()V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">68</td>
+        <td>java/util/IdentityHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">69</td>
+        <td>java/util/Random."&lt;init&gt;":(J)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">70</td>
+        <td>java/util/TreeMap.get:(Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">71</td>
+        <td>java/beans/PropertyDescriptor.getWriteMethod:()Ljava/lang/reflect/Method;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">72</td>
+        <td>java/io/BufferedInputStream."&lt;init&gt;":(Ljava/io/InputStream;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">73</td>
+        <td>java/io/ByteArrayOutputStream.write:([B)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">74</td>
+        <td>java/io/FileInputStream.read:()I</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">75</td>
+        <td>java/io/FileInputStream.read:([B)I</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">76</td>
+        <td>java/io/FileOutputStream."&lt;init&gt;":(Ljava/io/File;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">77</td>
+        <td>java/io/FilterInputStream."&lt;init&gt;":(Ljava/io/InputStream;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">78</td>
+        <td>java/io/IOException.getMessage:()Ljava/lang/String;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">79</td>
+        <td>java/io/InputStreamReader."&lt;init&gt;":(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">80</td>
+        <td>java/io/PrintWriter.println:(Ljava/lang/String;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">81</td>
+        <td>java/io/PushbackInputStream.unread:([BII)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">82</td>
+        <td>java/lang/AssertionError.getMessage:()Ljava/lang/String;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">83</td>
+        <td>java/lang/reflect/Field.getName:()Ljava/lang/String;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">84</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(DLjava/math/MathContext;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">85</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(Ljava/math/BigInteger;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">86</td>
+        <td>java/math/BigDecimal."&lt;init&gt;":(Ljava/math/BigInteger;ILjava/math/MathContext;)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">87</td>
+        <td>java/math/BigDecimal.abs:()Ljava/math/BigDecimal;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">88</td>
+        <td>java/math/BigDecimal.longValue:()J</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">89</td>
+        <td>java/math/BigDecimal.toPlainString:()Ljava/lang/String;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">90</td>
+        <td>java/math/BigDecimal.toString:()Ljava/lang/String;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">91</td>
+        <td>java/math/BigInteger.bitLength:()I</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">92</td>
+        <td>java/nio/ByteBuffer.hasRemaining:()Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">93</td>
+        <td>java/nio/ByteBuffer.wrap:([B)Ljava/nio/ByteBuffer;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">94</td>
+        <td>java/nio/CharBuffer.wrap:([C)Ljava/nio/CharBuffer;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">95</td>
+        <td>java/sql/Timestamp."&lt;init&gt;":(J)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">96</td>
+        <td>java/sql/Timestamp.getTime:()J</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">97</td>
+        <td>java/util/Arrays.equals:([Ljava/lang/Object;[Ljava/lang/Object;)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">98</td>
+        <td>java/util/Calendar.getInstance:(Ljava/util/TimeZone;)Ljava/util/Calendar;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">99</td>
+        <td>java/util/Calendar.getTime:()Ljava/util/Date;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">100</td>
+        <td>java/util/Calendar.getTimeInMillis:()J</td>
+        <td align="right">2</td>
+      </tr>
+    </table>
+    <p>NOTE: the table shows the first 100 most popular calls out of 215 calls.</p>
+    <h2 id="other_library_calls">Other library classes used</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Class name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>org/junit/Assert</td>
+        <td align="right">428</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>software/amazon/ion/junit/IonAssert</td>
+        <td align="right">107</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>software/amazon/ion/impl/PrivateUtils</td>
+        <td align="right">101</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>software/amazon/ion/system/IonTextWriterBuilder</td>
+        <td align="right">94</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>software/amazon/ion/system/IonSystemBuilder</td>
+        <td align="right">54</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>software/amazon/ion/system/SimpleCatalog</td>
+        <td align="right">41</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>software/amazon/ion/impl/PrivateIonBinaryWriterBuilder</td>
+        <td align="right">35</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>software/amazon/ion/IonType</td>
+        <td align="right">30</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>org/junit/rules/ExpectedException</td>
+        <td align="right">29</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>software/amazon/ion/util/IonTextUtils</td>
+        <td align="right">23</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>software/amazon/ion/system/IonBinaryWriterBuilder</td>
+        <td align="right">22</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>software/amazon/ion/impl/PrivateIonTextAppender</td>
+        <td align="right">21</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>software/amazon/ion/impl/PrivateIonReaderFactory</td>
+        <td align="right">19</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>software/amazon/ion/Decimal</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>software/amazon/ion/ReaderChecker</td>
+        <td align="right">14</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>software/amazon/ion/ReaderMaker</td>
+        <td align="right">13</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>software/amazon/ion/Symtabs</td>
+        <td align="right">12</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>software/amazon/ion/util/IonStreamUtils</td>
+        <td align="right">11</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>software/amazon/ion/SharedSymtabMaker</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>software/amazon/ion/TestUtils</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>software/amazon/ion/impl/PrivateIonConstants</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>software/amazon/ion/impl/bin/PrivateIonManagedBinaryWriterBuilder</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>org/junit/runners/model/TestClass</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>software/amazon/ion/IntegerSize</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>org/junit/runners/model/FrameworkField</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>software/amazon/ion/impl/PrivateIonWriterFactory</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>software/amazon/ion/ReadOnlyValueException</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>software/amazon/ion/IonTestCase</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>software/amazon/ion/Timestamp</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>software/amazon/ion/impl/PrivateSymtabExtendsCache</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>software/amazon/ion/impl/lite/PrivateLiteDomTrampoline</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>software/amazon/ion/util/IonTextUtils$SymbolVariant</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>"&lt;init&gt;":()V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>"&lt;init&gt;":(I)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">35</td>
+        <td>"&lt;init&gt;":(II)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">36</td>
+        <td>"&lt;init&gt;":(III)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">37</td>
+        <td>"&lt;init&gt;":(IIIIIILjava/lang/Integer;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">38</td>
+        <td>"&lt;init&gt;":(IIIIILjava/lang/Integer;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">39</td>
+        <td>"&lt;init&gt;":(ILjava/math/MathContext;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">40</td>
+        <td>"&lt;init&gt;":(J)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">41</td>
+        <td>"&lt;init&gt;":(JLjava/lang/Integer;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">42</td>
+        <td>"&lt;init&gt;":(JLjava/math/MathContext;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">43</td>
+        <td>"&lt;init&gt;":(Ljava/io/InputStream;I)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">44</td>
+        <td>"&lt;init&gt;":(Ljava/io/InputStream;[IC)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">45</td>
+        <td>"&lt;init&gt;":(Ljava/io/Reader;[ICC)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">46</td>
+        <td>"&lt;init&gt;":(Ljava/lang/String;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">47</td>
+        <td>"&lt;init&gt;":(Ljava/lang/String;I)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">48</td>
+        <td>"&lt;init&gt;":(Ljava/lang/String;II)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">49</td>
+        <td>"&lt;init&gt;":(Ljava/lang/String;III)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">50</td>
+        <td>"&lt;init&gt;":(Ljava/lang/String;IIZZ)V</td>
+        <td align="right">1</td>
+      </tr>
+    </table>
+    <p>NOTE: the table shows the first 50 most popular calls out of 1700 calls.</p>
+  </main>
+</body>
+</html>

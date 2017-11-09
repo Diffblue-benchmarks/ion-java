@@ -1,0 +1,2 @@
+buildCmd: "mvn compile"
+testCmd: "git submodule init; git submodule update; mvn test -Dmaven.test.failure.ignore=true"
